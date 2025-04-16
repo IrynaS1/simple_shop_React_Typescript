@@ -1,0 +1,1 @@
+# simple_shop_React_Typescript
