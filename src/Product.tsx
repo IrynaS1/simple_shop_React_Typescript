@@ -5,6 +5,7 @@ import type { ProductType } from "./BestSellers.tsx";
 import rating from "./assets/img/rating.svg";
 import cartWhite from "./assets/img/cartWhite.svg";
 import arrowBack from "./assets/img/arrowBack.svg";
+import { Reviews } from "./Rewiews.tsx";
 
 export const Product = () => {
   const [product, setProduct] = useState<ProductType | null>(null);
@@ -31,7 +32,7 @@ export const Product = () => {
       </div>
 
       <div className="product">
-        <img src={product.image} alt="" />
+        <img src={product.image} alt="Product image" />
         <div className="info">
           <p className="title">{product.title}</p>
           <p className="price">$ {product.price}</p>
@@ -45,11 +46,13 @@ export const Product = () => {
           </div>
           <p className="description">{product.description}</p>
           <button>
-            <img src={cartWhite} alt="" />
+            <img src={cartWhite} alt="Cart button icon" />
             Add to cart
           </button>
         </div>
       </div>
+
+      <Reviews />
     </>
   );
 };

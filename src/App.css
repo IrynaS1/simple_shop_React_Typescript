@@ -227,7 +227,7 @@
 }
 
 /* Отзывы */
-.reviewBox {
+.review-box {
   margin-bottom: 200px;
 }
 
@@ -236,7 +236,7 @@
   flex-direction: column;
 }
 
-.review h3 {
+.h3 {
   color: #22262A;
   font-size: 24px;
   font-weight: 500;
@@ -245,7 +245,7 @@
   margin: 0 0 30px 0;
 }
 
-.review textarea {
+.textarea {
   width: 100%;
   border: 1px solid #E0DFDC;
   border-radius: 2px;
@@ -257,15 +257,14 @@
   padding: 10px;
 }
 
-.review textarea::placeholder {
-  color: #22262A;
+.textarea::placeholder {
+  color: #737067;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-
 }
 
-.review button {
+.review-button {
   background-color: white;
   border: 1px solid #2068F8;
   border-radius: 2px;
@@ -280,8 +279,7 @@
   width: 170px;
 }
 
-
-.reviewField {
+.review-field {
   padding: 38px 48px 50px;
   background: #FFFFFF;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
@@ -289,27 +287,30 @@
   margin-bottom: 15px;
 }
 
-.reviewField .info {
+.review-field .info {
   display: flex;
   justify-content: space-between;
 }
 
-.reviewField .info .user {
+.review-field .info .user {
   display: flex;
   flex-grow: 1;
 }
 
-.reviewField .info .user img {
+.review-field .info .user img {
+width: 48px;
+height:48px ;
+border-radius: 50px;
   margin-right: 12px;
 }
 
 
-.reviewField .info .user .infoBox {
+.review-field .info .user .info-box {
   display: flex;
   flex-direction: column;
 }
 
-.reviewField .info .user .infoBox .author {
+.review-field .info .user .infoBox .author {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -317,17 +318,17 @@
   margin: 0;
 }
 
-.reviewField .info .user .infoBox .rating {
+.review-field .info .user .infoBox .rating {
   margin: 0;
 }
 
 
-.reviewField .info .date {
+.review-field .info .date {
   margin: 0;
 }
 
 
-.reviewField .content .title {
+.review-field .content-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
